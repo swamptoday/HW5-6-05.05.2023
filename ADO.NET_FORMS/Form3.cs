@@ -150,6 +150,7 @@ namespace ADO.NET_FORMS
                         analysisId = (int)result;
                     }
                 }
+
                 Item selectedItem = comboBox1.Items.OfType<Item>().FirstOrDefault(item => item.Id == analysisId);
                 comboBox1.SelectedItem = selectedItem;
             }
