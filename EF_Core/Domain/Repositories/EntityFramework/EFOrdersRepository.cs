@@ -48,5 +48,12 @@ namespace EF_Core.Domain.Repositories.EntityFramework
             return context.Orders.Where(o => o.ord_datetime.Year == year);
 
         }
+
+        public string GetOrderAnalys(int id)
+        {
+            return context.Analysis.FirstOrDefault(x => x.an_id == id).an_name;
+        }
+
     }
+
 }

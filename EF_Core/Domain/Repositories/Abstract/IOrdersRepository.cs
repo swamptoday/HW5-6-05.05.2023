@@ -13,5 +13,7 @@ namespace EF_Core.Domain.Repositories.Abstract
 
         public void DeleteOrder(int id);
         public IQueryable<Order> GetOrdersByYear(int year);
+
+        public string GetOrderAnalys(int id);
     }
 }
