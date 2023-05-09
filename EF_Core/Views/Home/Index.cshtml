@@ -1,0 +1,56 @@
+﻿@model IEnumerable<EF_Core.Domain.Entities.Order>
+
+@{
+    ViewData["Title"] = "Orders Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<hr />
+
+<p>
+    <a asp-controller="Order" asp-action="Edit" asp-route-id="" class="btn btn-primary">Create New</a>
+</p>
+
+<form method="get" asp-controller="Order" asp-action="FilterByYear">
+    <label for="year">Enter year:</label>
+    <input type="text" id="year" name="year" />
+    <input type="submit" value="Filter" />
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ord_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ord_datetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ord_an)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ord_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ord_datetime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ord_an)
+                </td>
+                <td>
+                    <a asp-controller="Order" asp-action="Edit" asp-route-id="@item.ord_id" class="btn btn-primary">Edit</a> |
+                    <a asp-controller="Order" asp-action="Delete" asp-route-id="@item.ord_id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
