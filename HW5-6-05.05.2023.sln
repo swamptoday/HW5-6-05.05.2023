@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO.NET_FORMS", "ADO.NET_FORMS\ADO.NET_FORMS.csproj", "{F30800EC-9602-4429-A16C-0F6F9A1F5AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADO.NET_FORMS", "ADO.NET_FORMS\ADO.NET_FORMS.csproj", "{F30800EC-9602-4429-A16C-0F6F9A1F5AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_Core", "EF_Core\EF_Core.csproj", "{45ADEBB8-3F53-4EF3-B070-8AE91F092692}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F30800EC-9602-4429-A16C-0F6F9A1F5AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F30800EC-9602-4429-A16C-0F6F9A1F5AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F30800EC-9602-4429-A16C-0F6F9A1F5AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45ADEBB8-3F53-4EF3-B070-8AE91F092692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45ADEBB8-3F53-4EF3-B070-8AE91F092692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45ADEBB8-3F53-4EF3-B070-8AE91F092692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45ADEBB8-3F53-4EF3-B070-8AE91F092692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
